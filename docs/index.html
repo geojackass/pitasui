@@ -9,7 +9,7 @@
 <body>
   <div class="contact-form">
     <h2>ピタスイ情報入力ページ</h2>
-    <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScJjDS6Sgm_dvHQbJLGnboeBe-sPyUAGXynnXxiTikNZPO2oA/formResponse" method="post" taget="thanks" onsubmit="submitted=true">
+    <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScJjDS6Sgm_dvHQbJLGnboeBe-sPyUAGXynnXxiTikNZPO2oA/formResponse" method="post" taget="thanks" target="hidden_iframe" onsubmit="submitted=true;">
       <label for="email">メールアドレス<span>*</span></label>
       <input type="email" id="email" class="form_field" name="emailAddress" placeholder="pitasui@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
@@ -33,15 +33,14 @@
 
       <button type="submit">送信</button>
     </form>
-  </div>
-    <script type="text/javascript">
-    let submitted = false;
+  <script type="text/javascript">
+    var submitted = false;
   </script>
   <iframe
-    name="thanks"
-    id="thanks"
+    name="hidden_iframe"
+    id="hidden_iframe"
     style="display: none"
-    onload="if(submitted){window.location='thanks.html';}"
+    onload="if(submitted)  {window.location='thanks.html';}"
   ></iframe>
 </body>
 </html>

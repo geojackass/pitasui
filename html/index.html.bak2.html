@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ピタスイ</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  
+<main class="contact-wrapper">
+    <h1 class="contact-h1">お問い合わせフォーム</h1>
+    <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScJjDS6Sgm_dvHQbJLGnboeBe-sPyUAGXynnXxiTikNZPO2oA/formResponse">
+
+     <!-- メールアドレス -->
+     <div class="form-wrapper">
+       <label class="form_block">
+         <div class="form_label">メールアドレス<span class="form-required">必須</span></div>
+         <input type="email" id="email" class="form_field" name="emailAddress" placeholder="pitasui@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+       </label>
+      </div>
+
+    　<!-- 購入品 テキストエリア -->
+      <div class="form-wrapper">
+        <label class="form_block">
+          <div class="form_label">欲しいアイテムの種類(水着・ゴーグル・バドルなど)<span class="form-required">必須</span></div>
+          <textarea class="form_field --textfield" placeholder="" name="entry.340082633"></textarea>
+        </label>
+      </div>
+
+    <!-- 使用目的 プルダウン -->
+      <div class="form-wrapper">
+        <div class="form_label">使用目的<span class="form-required">必須</span></div>
+        <select name="entry.870166334" class="form_field">
+          <option class="select-option" value="training">練習</option>
+          <option class="select-option" value="race">race</option>
+          <option class="select-option" value="diet">フィットネス・ダイエット</option>
+        　<option class="select-option" value="other">その他</option>
+        </select>
+      </div>      
+
+      <!-- 予算 プルダウン -->
+      <div class="form-wrapper">
+        <div class="form_label">予算<span class="form-required">必須</span></div>
+        <select name="entry.386439623" class="form_field">
+          <option class="select-option" value="3000">3000円程度</option>
+          <option class="select-option" value="5000">5000円程度</option>
+          <option class="select-option" value="10000">1万円程度</option>
+        　<option class="select-option" value="30000">1万円以上</option>
+        </select>
+      </div>      
+
+      <!-- 年代 プルダウン -->
+      <div class="form-wrapper">
+        <div class="form_label">年代<span class="form-required">必須</span></div>
+        <select name="entry.658659804" class="form_field">
+          <option class="select-option" value="10">10代</option>
+          <option class="select-option" value="20">20代</option>
+          <option class="select-option" value="30">30代</option>
+          <option class="select-option" value="40">40代</option>
+        　<option class="select-option" value="50">50代</option>
+          <option class="select-option" value="60">60代</option>
+          <option class="select-option" value="70">70代</option>
+        </select>
+      </div>      
+      
+    　<!-- 性別 ラジオボタン -->
+      <div class="form-wrapper">
+        <div class="form_label">性別</div>
+        <div class="form_radio-wrapper">
+          <label class="label_radio">
+　　　　　　　<input type="radio" name="entry.785359631" value="男性" checked class="form_radio">
+            <span class="radio_span">男性</span>
+          </label>
+          <label class="label_radio">
+            <input type="radio" name="entry.785359631" value="女性" class="form_radio">
+            <span class="radio_span">女性</span>
+          </label>
+        </div>
+      </div>
+
+      <!--こだわり テキストエリア -->
+      <div class="form-wrapper">
+        <label class="form_block">
+          <div class="form_label">こだわり<span class="form-required">必須</span></div>
+          <textarea class="form_field --textfield" placeholder="" name="entry.509306662"></textarea>
+        </label>
+      </div>
+
+      <!-- 送信ボタン -->
+      <button type="submit" class="form-btn">送信する</button>
+    </form>
+  </main>
+  <iframe
+    name="thanks"
+    id="thanks"
+    style="display: none"
+    onload="if(submitted){window.location='thanks.html';}"
+  ></iframe>
+</body>
+</html>

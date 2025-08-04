@@ -9,7 +9,7 @@
 <body>
   <div class="contact-form">
     <h2>ピタスイ情報入力ページ</h2>
-    <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScJjDS6Sgm_dvHQbJLGnboeBe-sPyUAGXynnXxiTikNZPO2oA/formResponse" method="post" taget="thanks" target="hidden_iframe" onsubmit="submitted=true;">
+    <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScJjDS6Sgm_dvHQbJLGnboeBe-sPyUAGXynnXxiTikNZPO2oA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
       <label for="email">メールアドレス<span>*</span></label>
       <input type="email" id="email" class="form_field" name="emailAddress" placeholder="pitasui@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
@@ -32,15 +32,15 @@
       <textarea id="message" name="entry.870166334" rows="4" required></textarea>
 
       <button type="submit">送信</button>
+      <script type="text/javascript">
+        var submitted = false;
+      </script>
+      <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        onload="if(submitted)  {window.location='thanks.html';}"
+    ></iframe>
     </form>
-  <script type="text/javascript">
-    var submitted = false;
-  </script>
-  <iframe
-    name="hidden_iframe"
-    id="hidden_iframe"
-    style="display: none"
-    onload="if(submitted)  {window.location='thanks.html';}"
-  ></iframe>
 </body>
 </html>

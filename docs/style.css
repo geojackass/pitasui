@@ -26,6 +26,9 @@ body {
 .contact-form label span {
   color: red;
 }
+.contact-form span {
+  color: red;
+}
 .contact-form input, .contact-form textarea {
   width: 100%;
   padding: 10px;
